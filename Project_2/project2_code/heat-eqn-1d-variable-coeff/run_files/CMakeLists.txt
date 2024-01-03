@@ -1,0 +1,15 @@
+
+ADD_EXECUTABLE(run_boundaries_forward_euler run_boundaries_forward_euler.cpp)
+target_link_libraries(run_boundaries_forward_euler forward_euler base_template)
+
+
+ADD_EXECUTABLE(run_boundaries_crank_nicolson run_boundaries_crank_nicolson.cpp)
+target_link_libraries(run_boundaries_crank_nicolson crank_nicolson base_template)
+
+
+ADD_EXECUTABLE(run_stability_forward_euler run_stability_forward_euler.cpp)
+target_link_libraries(run_stability_forward_euler forward_euler base_template)
+
+
+ADD_EXECUTABLE(run_stability_crank_nicolson run_stability_crank_nicolson.cpp)
+target_link_libraries(run_stability_crank_nicolson crank_nicolson base_template)
